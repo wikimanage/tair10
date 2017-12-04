@@ -264,3 +264,67 @@ type bigBed 12 .
 bigDataUrl bbi/ensGene.araTha1.bb
 searchIndex name
 searchTrix ensGene.araTha1.ix
+
+
+track  C24
+bigDataUrl bbi/Arabidopsis__sRNA-1_3634__L8_ATCACG_L008.bw
+shortLabel bigWig C24
+longLabel C24 small RNA sequencing normalized
+type bigWig
+visibility full 
+
+track  488
+bigDataUrl bbi/Arabidopsis__sRNA-5_3638__L8_ACAGTG_L008.bw
+shortLabel bigWig 488
+longLabel 488 small RNA sequencing normalized
+type bigWig
+visibility full 
+
+track  488-CP
+bigDataUrl bbi/Arabidopsis__sRNA-7_3640__L8_CAGATC_L008.bw
+shortLabel bigWig 488-CP
+longLabel 488-CP small RNA sequencing normalized
+type bigWig
+visibility full 
+
+track  C24-H20
+bigDataUrl bbi/Arabidopsis__sRNA-10_3643__L8_TAGCTT_L008.bw
+shortLabel bigWig C24-H20
+longLabel C24-H20 small RNA sequencing normalized
+type bigWig
+visibility full 
+
+track  488-H20
+bigDataUrl bbi/Arabidopsis__sRNA-11_3644__L8_GGCTAC_L008.bw
+shortLabel bigWig 488-H20
+longLabel 488-H20 small RNA sequencing normalized
+type bigWig
+visibility full 
+
+track  488-CP-H20
+bigDataUrl bbi/Arabidopsis__sRNA-12_3645__L8_CTTGTA_L008.bw
+shortLabel bigWig 488-CP-H20
+longLabel 488-CP-H20 small RNA sequencing normalized
+type bigWig
+visibility full
+
+track  C24-NaCl
+bigDataUrl bbi/Arabidopsis__sRNA-13_3646__L8_AGTCAA_L008.bw
+shortLabel bigWig C24-NaCl
+longLabel C24-NaCl small RNA sequencing normalized
+type bigWig
+visibility full 
+
+track  488-NaCl
+bigDataUrl bbi/Arabidopsis__sRNA-14_3647__L8_AGTTCC_L008.bw
+shortLabel bigWig 488-NaCl
+longLabel 488-NaCl small RNA sequencing normalized
+type bigWig
+visibility full 
+
+track  488-CP-NaCl
+bigDataUrl bbi/Arabidopsis__sRNA-15_3648__L8_ATGTCA_L008.bw
+shortLabel bigWig 488-CP-NaCl
+longLabel 488-CP-NaCl small RNA sequencing normalized
+type bigWig
+visibility full 
