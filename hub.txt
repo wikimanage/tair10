@@ -1,5 +1,6 @@
 hub tair10_sRNA
-shortLabel tair10 track 
-longLabel sRNA track in tair10 genome
+shortLabel tair10_track 
+longLabel sRNA_track_in_tair10_genome
 genomesFile genomes.txt
 descriptionUrl plants.html
+email runsheng.lee@gmail.com
