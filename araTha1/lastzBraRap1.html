@@ -1,0 +1,85 @@
+<H2>Description</H2>
+<P>
+This track shows alignments of
+<em>Brassica rapa</em> (braRap1, Nov. 2012)
+to <em>Arabidopsis thaliana</em> (araTha1, May 2011)
+</P>
+
+<H2>Methods</H2>
+<P>
+The alignment was performed with
+<A HREF="http://www.bx.psu.edu/miller_lab/" TARGET=_blank>
+lastz version 1.00.05</A> with parameters:
+<PRE>
+O=315,E=24,K=3000,L=3000,M=0,X=830,Y=2715 and scoring matrix:
+     A    C    G    T
+A   83  -96  -40  -97
+C  -96  100  -97  -40
+G  -40  -97  100  -96
+T  -97  -40  -96   83
+</PRE>
+
+The resulting alignments were 'chained' together running 'axtChain'
+selecting chains with at least a minimum score of 5000 and
+linearGap 'loose' scoring matrix:
+<PRE>
+zcat lastzResults*.psl.gz \
+  | axtChain -psl -verbose=0 -scoreScheme=araTha1BraRap1.q \
+    -minScore=5000 -linearGap=loose stdin araTha1.2bit braRap1.2bit stdout \
+    | chainAntiRepeat araTha1.2bit braRap1.2bit stdin output.chain
+</PRE>
+
+Syntenic nets were selected with 'netSyntenic' from the netted
+alignments from 'chainNet' on the full chains, then
+using 'netChainSubset' to select the corresponding syntenic chains
+to produce a 'liftOver' set of chains:
+<PRE>
+chainPreNet araTha1.braRap1.all.chain.gz araTha1.chrom.sizes \
+  braRap1.chrom.sizes stdout \
+    | chainNet  stdin -minSpace=1 araTha1.chrom.sizes braRap1.chrom.sizes \
+       stdout /dev/null | netSyntenic stdin noClass.net
+
+netChainSubset -verbose=0 noClass.net araTha1.braRap1.all.chain.gz stdout \
+   | chainStitchId stdin stdout | gzip -c &gt; araTha1.braRap1.over.chain.gz
+</PRE>
+
+The 'liftOver' chains were converted to a bigBed file via 'chainToPsl',
+'pslToBed' and 'bedToBigBed':
+<PRE>
+chainToPsl -tMasked araTha1.braRap1.over.chain.gz \
+  araTha1.chrom.sizes braRap1.chrom.sizes araTha1.2bit braRap1.2bit stdout \
+    | pslToBed stdin stdout | sort -k1,1 -k2,2n &gt; araTha1ToBraRap1.bed
+
+bedToBigBed araTha1ToBraRap1.bed araTha1.chrom.sizes araTha1ToBraRap1.bb
+</PRE>
+</P>
+
+<h2>References</h2>
+
+<P>
+Chiaromonte F, Yap VB, Miller W.
+<A HREF="http://psb.stanford.edu/psb-online/proceedings/psb02/chiaromonte.pdf"
+TARGET=_blank>Scoring pairwise genomic sequence alignments</A>.
+<em>Pac Symp Biocomput</em>. 2002:115-26.
+PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/11928468" target="_blank">11928468</a>
+</p>
+
+<P>
+Kent WJ, Baertsch R, Hinrichs A, Miller W, Haussler D.
+<A HREF="http://www.pnas.org/content/100/20/11484.abstract"
+TARGET=_blank>Evolution's cauldron:
+duplication, deletion, and rearrangement in the mouse and human genomes</A>.
+<em>Proc Natl Acad Sci U S A</em>. 2003 Sep 30;100(20):11484-9.
+PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/14500911" target="_blank">14500911</a>; PMC: <a
+href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC208784/" target="_blank">PMC208784</a>
+</p>
+
+<P>
+Schwartz S, Kent WJ, Smit A, Zhang Z, Baertsch R, Hardison RC,
+Haussler D, Miller W.
+<A HREF="http://genome.cshlp.org/content/13/1/103.abstract"
+TARGET=_blank>Human-mouse alignments with BLASTZ</A>.
+<em>Genome Res</em>. 2003 Jan;13(1):103-7.
+PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/12529312" target="_blank">12529312</a>; PMC: <a
+href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC430961/" target="_blank">PMC430961</a>
+</p>
