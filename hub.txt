@@ -1,6 +1,6 @@
-hub tair10_sRNA
+hub tair10_nanopore_
 shortLabel tair10_track 
-longLabel sRNA_track_in_tair10_genome
+longLabel RNA_track_in_tair10_genome
 genomesFile genomes.txt
 descriptionUrl plants.html
 email runsheng.lee@gmail.com
