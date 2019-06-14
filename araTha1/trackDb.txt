@@ -316,3 +316,35 @@ type bigGenePred
 visibility squish
 priority 39 
 colorByStrand 64,224,208 250,128,114
+    
+track buds1 
+bigDataUrl track/buds1.bw
+shortLabel bigWig_buds1 
+longLabel buds1_wig 
+type bigWig
+visibility full
+color 200,200,200
+
+track buds2 
+bigDataUrl track/buds2.bw
+shortLabel bigWig_buds2
+longLabel buds2_wig 
+type bigWig
+visibility full
+color 200,200,200
+
+track seedling2 
+bigDataUrl track/seedling3.bw
+shortLabel bigWig_seedling2
+longLabel seedling2_wig 
+type bigWig
+visibility full
+color 200,200,200
+
+track seedling1
+bigDataUrl track/seedling2.bw
+shortLabel bigWig_seedling1
+longLabel seedling1_wig 
+type bigWig
+visibility full
+color 200,200,200
