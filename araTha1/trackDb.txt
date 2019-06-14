@@ -265,17 +265,25 @@ bigDataUrl bbi/ensGene.araTha1.bb
 searchIndex name
 searchTrix ensGene.araTha1.ix
 
-track buds
-bigDataUrl bbi/buds.bb
-shortLabel buds
+track buds0
+bigDataUrl rnabb/buds0.bb
+shortLabel buds_pre
 longLabel buds reads track
 type bigGenePred
 visibility squish
 colorByStrand 64,224,208 250,128,114
 
-track seedling
-bigDataUrl bbi/seedling.bb
-shortLabel seedling
+track seedling0
+bigDataUrl rnabb/seedling0.bb
+shortLabel seedling_pre
+longLabel seedling reads track
+type bigGenePred
+visibility squish
+colorByStrand 64,224,208 250,128,114
+
+track seedling1
+bigDataUrl rnabb/seedling2.bb
+shortLabel seedling1
 longLabel seedling reads track
 type bigGenePred
 visibility squish
