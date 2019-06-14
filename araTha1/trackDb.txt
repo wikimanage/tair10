@@ -270,7 +270,7 @@ bigDataUrl rnabb/buds0.bb
 shortLabel buds_pre
 longLabel buds_pre reads track
 type bigGenePred
-visibility squish
+visibility hide 
 colorByStrand 64,224,208 250,128,114
 
 track seedling0
@@ -278,7 +278,7 @@ bigDataUrl rnabb/seedling0.bb
 shortLabel seedling_pre
 longLabel seedling_pre reads track
 type bigGenePred
-visibility squish
+visibility hide
 colorByStrand 64,224,208 250,128,114
 
 track seedling1
