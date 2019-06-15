@@ -342,7 +342,7 @@ visibility full
 color 200,200,200
 
 track seedling1bw
-bigDataUrl track/seedling2.bw
+bigDataUrl rnabb/seedling2.bw
 shortLabel bigWig_seedling1
 longLabel seedling1_wig 
 type bigWig
