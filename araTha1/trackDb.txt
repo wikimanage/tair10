@@ -318,7 +318,7 @@ priority 39
 colorByStrand 64,224,208 250,128,114
     
 track buds1bw
-bigDataUrl track/buds1.bw
+bigDataUrl rnabb/buds1.bw
 shortLabel bigWig_buds1 
 longLabel buds1_wig 
 type bigWig
@@ -326,7 +326,7 @@ visibility full
 color 200,200,200
 
 track buds2bw
-bigDataUrl track/buds2.bw
+bigDataUrl rnabb/buds2.bw
 shortLabel bigWig_buds2
 longLabel buds2_wig 
 type bigWig
@@ -334,7 +334,7 @@ visibility full
 color 200,200,200
 
 track seedling2bw
-bigDataUrl track/seedling3.bw
+bigDataUrl rnabb/seedling3.bw
 shortLabel bigWig_seedling2
 longLabel seedling2_wig 
 type bigWig
