@@ -304,7 +304,7 @@ bigDataUrl rnabb/buds1.bb
 shortLabel buds1
 longLabel buds1 reads track
 type bigGenePred
-visibility squish
+visibility hide
 priority 39 
 colorByStrand 64,224,208 250,128,114
 
@@ -316,19 +316,36 @@ type bigGenePred
 visibility squish
 priority 39 
 colorByStrand 64,224,208 250,128,114
+
+track buds3
+bigDataUrl rnabb/buds3.bb
+shortLabel buds3
+longLabel buds3 reads track
+type bigGenePred
+visibility squish
+priority 39 
+colorByStrand 64,224,208 250,128,114
     
 track buds1bw
 bigDataUrl rnabb/buds1.bw
 shortLabel bigWig_buds1 
 longLabel buds1_wig 
 type bigWig
-visibility full
+visibility hide
 color 200,200,200
 
 track buds2bw
 bigDataUrl rnabb/buds2.bw
 shortLabel bigWig_buds2
 longLabel buds2_wig 
+type bigWig
+visibility full
+color 200,200,200
+
+track buds3bw
+bigDataUrl rnabb/buds3.bw
+shortLabel bigWig_buds3
+longLabel buds3_wig 
 type bigWig
 visibility full
 color 200,200,200
