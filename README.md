@@ -8,4 +8,4 @@ http://genome.ucsc.edu/cgi-bin/hgHubConnect?hgHub_do_redirect=on&hgHubConnect.re
 http://genome.ucsc.edu/cgi-bin/hgHubConnect?hgHub_do_redirect=on&hgHubConnect.remakeTrackHub=on&hgHub_do_firstDb=1&hubUrl=https://raw.github.com/wikimanage/tair10/master/hub488.txt
 
 #### 488 genome with a normal load
-http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubUrl=https://raw.github.com/wikimanage/tair10/master/hubi488.txt
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubUrl=https://raw.github.com/wikimanage/tair10/master/hub488.txt
