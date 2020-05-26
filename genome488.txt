@@ -1,5 +1,5 @@
 genome araTha1
-trackDb araTha1/trackDb.txt
+trackDb araTha1/trackDb_488.txt
 groups groups.txt
 description Feb. 2011 Thale cress
 twoBitPath araTha1/araTha1.2bit

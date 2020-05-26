@@ -1,0 +1,6 @@
+hub tair10_488
+shortLabel tair10_488
+longLabel RNA_488_track_in_tair10_genome
+genomesFile genome488.txt
+descriptionUrl plants.html
+email runsheng.lee@gmail.com
