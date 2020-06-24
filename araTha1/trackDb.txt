@@ -326,6 +326,15 @@ visibility squish
 priority 39 
 colorByStrand 64,224,208 250,128,114
     
+track vir1
+bigDataUrl rnabb/vir1.bb
+shortLabel vir1
+longLabel vir1 reads track
+type bigGenePred
+visibility hide
+priority 39 
+colorByStrand 64,224,208 250,128,114
+
 track buds1bw
 bigDataUrl rnabb/buds1.bw
 shortLabel bigWig_buds1 
